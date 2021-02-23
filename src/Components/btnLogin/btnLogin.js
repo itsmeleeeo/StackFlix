@@ -1,7 +1,7 @@
 import React from 'react'
-import './Header.css'
+import '../btnLogin/btnLogin.css'
 
-function UpVideo(props) {
+function BtnLogin(props) {
     return(
         <div>
             <button>{props.text}</button>
@@ -9,4 +9,4 @@ function UpVideo(props) {
     )
 }
 
-export default UpVideo
+export default BtnLogin

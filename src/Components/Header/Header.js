@@ -1,21 +1,30 @@
 import React from 'react'
-import Login from'./btnLogin'
-import Sign from './btnSignUp'
-import Member from './beMember'
-import Up from './upVideo'
+import { Link } from 'react-router-dom'
+import LgnButton from '../btnLogin/btnLogin'
+import SignButton from '../btnSign/btnSign'
+import Logo from '../img/logo.png'
 import './Header.css'
-import logo from '../img/logo.png'
 
 function Header() {
-    return(
-        <div className="cl5">
-            <img src={logo} alt="logo" />
-            <Login text="Login"/>
-            <Sign text="Sign Up"/>
-            <Member text="Be A Member"/>
-            <Up text="Upload Your Video"/>
+    return (
+        <div className="row hdr">
+            <div className="col-lg-6 col-md-6">
+                <Link to="/">
+                    <img src={Logo} alt="logo"/>
+                </Link>
+            </div>
+            <div className="col-lg-3 col-md-3">
+                <Link to="/login" >
+                    <LgnButton text="Login" />
+                </Link>
+            </div>
+            <div className="col-lg-3 col-md-3">
+                <Link to="/signUp" >
+                    <SignButton text="Sign Up" />
+                </Link>
+            </div>
         </div>
-    ) 
+    )
 }
 
 export default Header

@@ -1,15 +1,18 @@
 import React from 'react'
 import './Footer.css'
-import logo from '../img/logo.png'
 
-function Footer() {
+function Footer(props) {
     return(
-        <div className="cl5">
-            <img src={logo} alt="logo" />
-            <span className="spn-ftr">About us</span>
-            <span className="spn-ftr">Privacy Policy</span>
-            <span className="spn-ftr">Carrers</span>
-            <span className="spn-ftr">All Rights Reserved - Mozart Dev Corp.</span>
+        <div className="row ftr">
+            <div className="col-lg-6 col-md-6">
+                <p className="prgh-ftr">{props.text}</p>
+            </div>
+            <div className="col-lg-3 col-md-3">
+                <p className="prgh-ftr">About us</p>
+            </div>
+            <div className="col-lg-3 col-md-3">
+                <p className="prgh-ftr">Privacy Policy</p>
+            </div>
         </div>
     )
 }

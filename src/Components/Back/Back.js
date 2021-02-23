@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react' 
 import './Back.css'
 
-function Back(props) {
+function BackTitle(props) {
     return(
-        <div className="cl1">
+        <div>
             <h1 className="back">{props.text}</h1>
         </div>
-    ) 
+    )
 }
 
-export default Back
+export default BackTitle

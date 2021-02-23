@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react' 
 import './Front.css'
 
-function Front(props) {
+function FrontTitle(props) {
     return(
-        <div className="cl1">
-            <h1 className="front">{props.text}</h1>
+        <div>
+            <h1 className="font">{props.text}</h1>
         </div>
     )
 }
 
-export default Front
+export default FrontTitle
